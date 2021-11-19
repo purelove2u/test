@@ -20,7 +20,7 @@
         </div>
       </div>
       <div id="unity-footer">
-<!--         <div id="unity-webgl-logo"></div> -->
+        <div id="unity-webgl-logo"></div>
         <button id="entervr" value="Enter VR" disabled>VR</button>
         <button id="enterar" value="Enter AR" disabled>AR</button>
         <div id="unity-webxr-link">Using <a href="https://github.com/De-Panther/unity-webxr-export" target="_blank" title="WebXR Export">WebXR Export</a></div>
@@ -29,11 +29,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL_trans_1finger_nologo.loader.js";
+      var loaderUrl = buildUrl + "/WebGL_trans_1finger.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL_trans_1finger_nologo.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL_trans_1finger_nologo.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL_trans_1finger_nologo.wasm.unityweb",
+        dataUrl: buildUrl + "/WebGL_trans_1finger.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGL_trans_1finger.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGL_trans_1finger.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Perspective",
         productName: "AutoModeling_WebXR",
