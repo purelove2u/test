@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | xr-box_webgl</title>
+    <title>Perspective | xr-box_webgl</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -18,9 +18,9 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
+        <!-- <div id="unity-webgl-logo"></div> -->
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">xr-box_webgl</div>
+        <!-- <div id="unity-build-title">xr-box_webgl</div> -->
       </div>
     </div>
     <script>
@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL_trans_1finger.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL_trans_1finger.data.gz",
-        frameworkUrl: buildUrl + "/WebGL_trans_1finger.framework.js.gz",
-        codeUrl: buildUrl + "/WebGL_trans_1finger.wasm.gz",
+        dataUrl: buildUrl + "/WebGL_trans_1finger.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGL_trans_1finger.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGL_trans_1finger.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Perspective",
         productName: "xr-box_webgl",
@@ -82,7 +82,7 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "600px";
+        canvas.style.width = "100%";
         canvas.style.height = "960px";
       }
       loadingBar.style.display = "block";
