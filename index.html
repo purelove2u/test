@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width="800" height=960></canvas>
+    <div id="unity-container" class="unity-desktop" width=100%>
+      <canvas id="unity-canvas" width="600" height=960></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -82,7 +82,8 @@
         config.devicePixelRatio = 1;
         // unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "100%";
+        // canvas.style.width = "100%";
+        canvas.width = canvas.parentElement.width;
         canvas.style.height = "960px";
       }
       loadingBar.style.display = "block";
