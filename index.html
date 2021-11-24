@@ -70,13 +70,13 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           spinner.style.display = "none";
-          // progressBarEmpty.style.display = "";
+          progressBarEmpty.style.display = "";
           progressBarFull.style.width = `${100 * progress}%`;
         }).then((unityInstance) => {
           loadingCover.style.display = "none";
           if (canFullscreen) {
             if (!hideFullScreenButton) {
-              fullscreenButton.style.display = "";
+              // fullscreenButton.style.display = "";
             }
             fullscreenButton.onclick = () => {
               unityInstance.SetFullscreen(1);
