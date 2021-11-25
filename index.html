@@ -25,11 +25,11 @@
     <script>
       const hideFullScreenButton = "";
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/WebGL_trans_Final.loader.js";
+      const loaderUrl = buildUrl + "/WebGL_trans_Final_Quality.loader.js";
       const config = {
-        dataUrl: buildUrl + "/WebGL_trans_Final.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL_trans_Final.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL_trans_Final.wasm.unityweb",
+        dataUrl: buildUrl + "/WebGL_trans_Final_Quality.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGL_trans_Final_Quality.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGL_trans_Final_Quality.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Perspective",
         productName: "XR-Square",
@@ -76,7 +76,7 @@
           loadingCover.style.display = "none";
           if (canFullscreen) {
             if (!hideFullScreenButton) {
-//               fullscreenButton.style.display = "";
+              fullscreenButton.style.display = "";
             }
             fullscreenButton.onclick = () => {
               unityInstance.SetFullscreen(1);
